@@ -4,7 +4,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    /* background-color: hsl(0, 0%, 95%); */
+    background-color: #D6E4FF;
+
 }
 
 #calculator {
@@ -34,7 +36,8 @@ body {
 
 button {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Ensures button remains square */
+    aspect-ratio: 1 / 1;
+    /* Ensures button remains square */
     border-radius: 50%;
     border: none;
     background-color: hsl(0, 0%, 30%);
@@ -62,4 +65,32 @@ button:active {
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: #6667AB;
+    }
+
+    /* Very Peri */
+    25% {
+        background-color: #FF6B6B;
+    }
+
+    /* Coral Red */
+    50% {
+        background-color: #1E90FF;
+    }
+
+    /* Dodger Blue */
+    75% {
+        background-color: #32CD32;
+    }
+
+    /* Lime Green */
+    100% {
+        background-color: #6667AB;
+    }
+
+    /* Back to Very Peri */
 }
